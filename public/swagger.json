@@ -1,0 +1,49 @@
+{
+	"components": {
+		"examples": {},
+		"headers": {},
+		"parameters": {},
+		"requestBodies": {},
+		"responses": {},
+		"schemas": {},
+		"securitySchemes": {}
+	},
+	"info": {
+		"title": "rest-api-typescript-tutorial",
+		"version": "1.0.0",
+		"description": "tutorial",
+		"license": {
+			"name": "ISC"
+		},
+		"contact": {
+			"name": "Francis"
+		}
+	},
+	"openapi": "3.0.0",
+	"paths": {
+		"/healthcheck": {
+			"get": {
+				"operationId": "GetMessage",
+				"responses": {
+					"200": {
+						"description": "Ok",
+						"content": {
+							"application/json": {
+								"schema": {
+									"type": "string"
+								}
+							}
+						}
+					}
+				},
+				"security": [],
+				"parameters": []
+			}
+		}
+	},
+	"servers": [
+		{
+			"url": "/"
+		}
+	]
+}
